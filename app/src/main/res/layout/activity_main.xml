@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/topAppMargin"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TeamName"
+                android:text="@string/name_TeamA" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/Score"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/team_a_three"
+                style="@style/Button"
+                android:text="@string/threePoints_eng" />
+
+            <Button
+                android:id="@+id/team_a_two"
+                style="@style/Button"
+                android:text="@string/twoPoints_eng" />
+
+            <Button
+                android:id="@+id/team_a_free"
+                style="@style/Button"
+                android:text="Free Throw" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lineHeight"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                style="@style/Fouls"
+                android:text="@string/foulPlural_eng" />
+
+            <TextView
+                android:id="@+id/team_a_fouls"
+                style="@style/FoulCounter"
+                android:text="0/5" />
+
+            <Button
+                android:id="@+id/team_a_foul_button"
+                style="@style/FoulButton"
+                android:onClick="foulForTeamA"
+                android:text="Foul!"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/lineWidth"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TeamName"
+                android:text="@string/name_TeamB" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/Score"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/team_b_three"
+                style="@style/Button"
+                android:text="@string/threePoints_eng" />
+
+            <Button
+                android:id="@+id/team_b_two"
+                style="@style/Button"
+                android:text="@string/twoPoints_eng" />
+
+            <Button
+                android:id="@+id/team_b_free"
+                style="@style/Button"
+                android:text="Free Throw" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/lineHeight"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                style="@style/Fouls"
+                android:text="@string/foulPlural_eng" />
+
+            <TextView
+                android:id="@+id/team_b_fouls"
+                style="@style/FoulCounter"
+                android:text="0/5" />
+
+            <Button
+                android:id="@+id/team_b_foul_button"
+                style="@style/FoulButton"
+                android:onClick="foulForTeamB"
+                android:text="Foul!"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/resetMarginBottom"
+        android:backgroundTint="@color/gray"
+        android:text="@string/reset_eng"
+        android:onClick="resetAll"/>
+
+    <Button
+        android:id="@+id/new_quarter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reset_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newQuarter_eng"
+        android:onClick="newQuarter"/>
+
+
+</RelativeLayout>

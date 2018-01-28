@@ -1,0 +1,56 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="TeamName" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/teamNameMargin</item>
+        <item name="android:layout_marginBottom">@dimen/teamNameMargin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/teamNameSize</item>
+        <item name="android:textColor">@color/teamName</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Score">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/scoreMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/scoreMarginBottom</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/scoreTextSize</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/buttonMarginSide</item>
+        <item name="android:layout_marginRight">@dimen/buttonMarginSide</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
+    </style>
+
+    <style name="FoulCounter" parent="Score">
+        <item name="android:layout_marginTop">@dimen/foulCounterMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/scoreMarginBottom</item>
+        <item name="android:textSize">@dimen/foulCounterTextSize</item>
+    </style>
+
+    <style name="Fouls" parent="TeamName">
+        <item name="android:layout_marginTop">@dimen/foulsMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/foulsMarginBottom</item>
+    </style>
+
+    <style name="FoulButton" parent="Button">
+        <item name="android:backgroundTint">@color/foulButton</item>
+    </style>
+
+</resources>

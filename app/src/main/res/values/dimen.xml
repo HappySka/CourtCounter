@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="topAppMargin">10dp</dimen>
+
+    <dimen name="teamNameMargin">4dp</dimen>
+    <dimen name="teamNameSize">14sp</dimen>
+
+    <dimen name="scoreMarginTop">6dp</dimen>
+    <dimen name="scoreMarginBottom">10dp</dimen>
+    <dimen name="scoreTextSize">56sp</dimen>
+
+    <dimen name="resetMarginBottom">10dp</dimen>
+
+    <dimen name="lineHeight">1dp</dimen>
+    <dimen name="lineWidth">3dp</dimen>
+
+    <dimen name="buttonMarginSide">24dp</dimen>
+    <dimen name="buttonMarginBottom">8dp</dimen>
+
+    <dimen name="foulsMarginTop">15dp</dimen>
+    <dimen name="foulsMarginBottom">5dp</dimen>
+
+    <dimen name="foulCounterTextSize">32dp</dimen>
+    <dimen name="foulCounterMarginTop">0dp</dimen>
+
+</resources>
