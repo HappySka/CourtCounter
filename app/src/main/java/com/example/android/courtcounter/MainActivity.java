@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int foulsTeamA = 0;
     private int foulsTeamB = 0;
     private boolean reset = false;
-    View view;
 
 
     @Override
@@ -64,12 +63,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Displays the given score for Team A/B.
      */
     private void displayScoreForTeamA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
     private void displayScoreForTeamB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        TextView scoreView = findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -77,13 +76,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * Displays the given fouls for Team A/B.
      */
     private void displayFoulsForTeamA(int fouls) {
-        TextView foulView = (TextView) findViewById(R.id.team_a_fouls);
-        foulView.setText(fouls + "/5");
+        TextView foulView = findViewById(R.id.team_a_fouls);
+        foulView.setText(getString(R.string.from_five, fouls));
     }
 
     private void displayFoulsForTeamB(int fouls) {
-        TextView foulView = (TextView) findViewById(R.id.team_b_fouls);
-        foulView.setText(fouls + "/5");
+        TextView foulView = findViewById(R.id.team_b_fouls);
+        foulView.setText(getString(R.string.from_five, fouls));
     }
 
     /**
@@ -152,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             reset = true;
             Button resetButton = findViewById(R.id.reset_button);
             resetButton.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.red))); /* red */
-            resetButton.setText(getResources().getText(R.string.really_eng));
+            resetButton.setText(getResources().getText(R.string.really));
         }
     }
 
@@ -165,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             reset = false;
             Button resetButton = findViewById(R.id.reset_button);
             resetButton.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.gray))); /* red */
-            resetButton.setText(getResources().getText(R.string.reset_eng));
+            resetButton.setText(getResources().getText(R.string.reset));
         }
     }
 

@@ -2,12 +2,16 @@
     <string name="app_name">Court Counter</string>
     <string name="name_TeamA">Team A</string>
     <string name="name_TeamB">Team B</string>
-    <string name="threePoints_eng">+3 Points</string>
-    <string name="twoPoints_eng">+2 Points</string>
-    <string name="freeThrow_eng">Free Throw</string>
-    <string name="reset_eng">Reset</string>
-    <string name="really_eng">Really?</string>
-    <string name="newQuarter_eng">New Quarter</string>
-    <string name="fouSsingular_eng">foul</string>
-    <string name="foulPlural_eng">Fouls</string>
+    <string name="threePoints">+3 Points</string>
+    <string name="twoPoints">+2 Points</string>
+    <string name="freeThrow">Free Throw</string>
+    <string name="reset">Reset</string>
+    <string name="really">Really?</string>
+    <string name="newQuarter">New Quarter</string>
+    <string name="fouSsingular">foul</string>
+    <string name="foulPlural">Fouls</string>
+    <string name="zero">0</string>
+    <string name="zero_from_five">0\u002f5</string>
+    <string name="foul">Foul!</string>
+    <string name="from_five">%d/5</string>
 </resources>

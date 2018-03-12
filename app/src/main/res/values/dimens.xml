@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <dimen name="topAppMargin">10dp</dimen>
 
+    <dimen name="team_layout_width">0dp</dimen>
     <dimen name="teamNameMargin">4dp</dimen>
     <dimen name="teamNameSize">14sp</dimen>
 
@@ -23,5 +23,6 @@
 
     <dimen name="foulCounterTextSize">32dp</dimen>
     <dimen name="foulCounterMarginTop">0dp</dimen>
+
 
 </resources>
